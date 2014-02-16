@@ -1,5 +1,5 @@
-#ifndef  _APP_DELEGATE_H_
-#define  _APP_DELEGATE_H_
+#ifndef  _HELLO_APP_DELEGATE_H_
+#define  _HELLO_APP_DELEGATE_H_
 
 #include "cocos2d.h"
 
@@ -8,11 +8,11 @@
 
 The reason for implement as private inheritance is to hide some interface call by Director.
 */
-class  AppDelegate : private cocos2d::Application
+class  HelloAppDelegate : private cocos2d::Application
 {
 public:
-    AppDelegate();
-    virtual ~AppDelegate();
+    HelloAppDelegate();
+    virtual ~HelloAppDelegate();
 
     /**
     @brief    Implement Director and Scene init code here.
@@ -34,5 +34,5 @@ public:
     virtual void applicationWillEnterForeground();
 };
 
-#endif // _APP_DELEGATE_H_
+#endif // _HELLO_APP_DELEGATE_H_
 
